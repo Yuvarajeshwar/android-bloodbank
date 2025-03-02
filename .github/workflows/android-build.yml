@@ -22,6 +22,9 @@ jobs:
         java-version: '11'  # Set Java version to 11 (can change based on your project needs)
         distribution: 'temurin'
 
+    - name: Give Gradle wrapper execute permissions
+      run: chmod +x gradlew  # This adds execute permission to gradlew
+
     - name: Build with Gradle
       run: ./gradlew assembleRelease  # This builds the APK for release variant
 

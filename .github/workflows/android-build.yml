@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '11'  # Set Java version to 11 (can change based on your project needs)
-        distribution: 'adoptopenjdk'
+        distribution: 'adoptium'
 
     - name: Build with Gradle
       run: ./gradlew assembleRelease  # This builds the APK for release variant
